@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        margin: 0 auto;
+        max-width: 800px;
+        ;
+
+    }
+
+    .header {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        background-color: lightgray;
+        margin: 0;
+        background-color: purple;
+        height: 80px;
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+
+    }
+
+    .header-container ul {
+        display: flex;
+        align-items: baseline;
+        list-style-type: none;
+        padding: 30px
+    }
+
+    .header-container li {
+        margin-left: 40px;
+
+    }
+
+    .main {
+        grid-column-start: 1;
+        grid-column-end: 2;
+
+    }
+
+    .side-bar {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        width: 80%;
+    }
+
+    a {
+        list-style-type: none;
+    }
+
+    .footer {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        background-color: lightgray;
+        text-align: center;
+        height: 50px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-container">
+                <h1>this is a header</h1>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <h2>Article Title</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum laborum doloribus esse repellendus minima
+                vel illum, odit fugit quam itaque autem reiciendis quas commodi consectetur ab aperiam laboriosam dolor
+                delectus?
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum laborum doloribus esse repellendus minima
+                vel illum, odit fugit quam itaque autem reiciendis quas commodi consectetur ab aperiam laboriosam dolor
+                delectus?
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum laborum doloribus esse repellendus minima
+                vel illum, odit fugit quam itaque autem reiciendis quas commodi consectetur ab aperiam laboriosam dolor
+                delectus?
+            </p>
+
+        </div>
+
+        <div class="side-bar">
+            <h3> Side Links</h3>
+            <ul>
+                <li><a href="docs.html">Official Docs</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer">
+            <p>(C) Acme Inc </p>
+
+        </div>
+    </div>
+</body>
+
+</html>
